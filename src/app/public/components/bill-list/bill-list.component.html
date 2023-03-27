@@ -5,15 +5,9 @@
     </div>
     <div class="bill-list-item" *ngFor="let bill of billItemsSaved">
         <div class="bill-item">
-            <p> 
-                <strong>Código:</strong> {{bill.billCode}} 
-            </p> 
-            <p> 
-                <strong>Cliente:</strong> {{bill.client.name}}
-            </p>
-            <p>
-                <strong>Total: </strong> $ {{bill.total}}
-            </p>
+            <p> <strong>Código:</strong> {{bill.billCode}} </p> 
+            <p> <strong>Cliente:</strong> {{bill.client.name}} </p>
+            <p> <strong>Total: </strong> $ {{bill.total}} </p>
         </div>
     </div>
 </div>
