@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: #fa405c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-logo{
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.header-button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px;
+    border-color: transparent;
+    margin-left: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-button:hover {
+    color: #1E1E1E;
+}
+
+.header-button:active {
+    color: #C3C2C2;
+}

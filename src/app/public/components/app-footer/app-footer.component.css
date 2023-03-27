@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    width: 100%;
+    background-color: #C3C2C2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    margin-top: 20px;
+    bottom: 0px;
+}
+
+.footer-info-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding-left: 100px;
+}
+
+.footer-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.question-img{
+    width: 35px;
+    height: 35px;
+}
+
+.contact-info{
+    text-align: center;
+}
+
+.footer-questions{
+    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;    
+}

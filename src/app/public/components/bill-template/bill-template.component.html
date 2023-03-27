@@ -1,0 +1,102 @@
+<div class="bill-container">
+    <div class="bill-header">
+        <div class="bill-tittle">
+            <p>EasyBilling</p>
+        </div>
+        <div class="bill-info">
+            <p><strong>Factura de Venta</strong></p>
+            <br>
+            <p>EasyBilling SAS</p>
+            <p>Edificio principal, Ibagué</p>
+            <p>608 2752363</p>
+            <p>easy-billing-sas@email.com</p>
+        </div>
+    </div>
+    <div class="bill-body">
+        <div class="bill-body-forms">
+            <form [formGroup]="clientForm">
+                <div class="client-element">
+                    <p class="form-tittle">Información del Cliente</p>
+                    <br>
+                    <label for="names">Nombre del cliente</label>
+                    <br>
+                    <input type="text" formControlName="names" class="input-item">
+                    <br>
+                    <label for="idNumber">Número de identificación</label>
+                    <br>
+                    <input type="number" formControlName="idNumber" class="input-item">
+                    <br>
+                    <label for="address">Dirección</label>
+                    <br>
+                    <input type="text" formControlName="address" class="input-item">
+                    <br>
+                </div>
+            </form>
+            <form [formGroup]="productForm" (ngSubmit)="submitProductData()">
+                <div class="input-element">
+                    <p class="form-tittle">Información del Producto</p>
+                    <br>
+                    <label for="idNumber">Código de producto</label>
+                    <br>
+                    <input type="number" formControlName="idNumber" class="input-item">
+                    <br>
+                    <label for="description">Descripción</label>
+                    <br>
+                    <input type="text" formControlName="description" class="input-item">
+                    <br>
+                    <label for="quantity">Cantidad</label>
+                    <br>
+                    <input type="number" formControlName="quantity" class="input-item">
+                    <br>
+                    <label for="price">Precio Unidad</label>
+                    <br>
+                    <input type="number" formControlName="price" class="input-item">
+                    <br>
+                    <label for="tax">IVA</label>
+                    <br>
+                    <select formControlName="tax" class="input-item">
+                        <option value=""></option>
+                        <option value="0">0%</option>
+                        <option value="12">12%</option>
+                        <option value="16">16%</option>            
+                    </select>
+                    <br>
+                    <button [disabled] ="!productForm.valid" class="add-product-button">Agregar producto</button> 
+                    <br>
+                </div>                
+            </form>
+        </div>
+        <div class="line"><hr></div>
+        <p class="resume">Resumen de Compra</p>
+        <div class="product-summary-container">
+            <table class="product-list">
+                <tr>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>CANT</th>
+                    <th>Precio</th>
+                    <th>IVA</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr class="item-summary" *ngFor="let product of billProducts">
+                    <td>{{product.idNumber}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td>{{product.price}}
+                    <td>{{product.taxPercent}}</td>
+                    <td>{{product.subTotal}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="line"><hr></div>
+        <div class="bill-summary-container">
+            <p class="total-items">Subtotal = $ {{subTotal}}</p>         
+            <p class="total-items">IVA = $ {{totalTax}}</p>
+            <p class="total-items"><strong>Total = $ {{total}}</strong></p>
+        </div>
+        <div class="save-button">
+            <button (click)="saveBill()" class="save-bill-button">Guardar Factura</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bill-container {
+    margin: auto;
+    margin-top: 16px;
+    max-width: 800px;
+    background-color: #c3c2c2;
+}
+
+.bill-header {
+    background-color: #fa405c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bill-tittle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-align: start;
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.bill-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-align: end;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.input-item {
+    max-width: 300px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bill-body-forms {
+    background-color: #C3C2C2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 30px;
+    color: #1E1E1E;
+}
+
+.add-product-button {
+    color: #fa405c;
+    padding: 0.7em 1.7em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+
+}
+
+.add-product-button:active {
+    background-color:#fa405c;
+    color: #FFFFFF;
+}
+
+.line hr {
+    height: 3px;
+    border: 5px;
+    background: #fa405c;
+    margin: 20px;
+}
+
+.resume{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.form-tittle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-list, th, td{
+    margin: 50px;
+    width: 700px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #FFFFFF;
+    font-size: 16px;
+    padding: 10px;
+}
+
+tr:hover{
+    background-color: fa405c;
+}
+
+.bill-summary-container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1E1E1E;
+    text-align: end;
+    font-size: 20px;
+    padding-right: 30px; 
+    margin: 20px;
+}
+
+.total-items{
+    margin: 7.5px;
+}
+
+.save-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa405c;
+}
+
+.save-bill-button {
+    color: #fa405c;
+    padding: 0.7em 1.7em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px;
+}
+
+.save-bill-button:active {
+    background-color:#C3C2C2;
+    color: #fa405c;;
+}
+

@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+app-footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    width: 99.5%;
+}
+
+.bill-list-tittle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FA405C;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.bill-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-top: 16px;
+    width: 600px;
+    background-color: #c3c2c2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.bill-item:hover {
+    background-color: #fa405c;
+}
